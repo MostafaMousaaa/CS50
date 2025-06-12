@@ -67,20 +67,39 @@ CS50/
 │   ├── C_Programming.txt
 │   ├── hello.c
 │   ├── calculator.c
+│   ├── discount.c
 │   ├── mario.c
-│   └── ...
+│   ├── conditions.c
+│   ├── loops.c
+│   └── data_types.c
 ├── 📂 Lecture 2 - Arrays/
 │   ├── Arrays.txt
 │   ├── arrays_basic.c
+│   ├── strings.c
 │   ├── caesar.c
-│   └── ...
+│   ├── readability.c
+│   ├── substitution.c
+│   ├── argv.c
+│   └── scores.c
 ├── 📂 Lecture 3 - Algorithms/
 │   ├── Algorithms.txt
 │   ├── linear_search.c
 │   ├── binary_search.c
-│   └── ...
+│   ├── selection_sort.c
+│   ├── bubble_sort.c
+│   ├── merge_sort.c
+│   ├── recursion.c
+│   └── phonebook.c
 ├── 📂 Lecture 4 - Memory/
-│   └── Memory.txt
+│   ├── Memory.txt
+│   ├── addresses.c
+│   ├── copy.c
+│   ├── memory.c
+│   ├── swap.c
+│   ├── phonebook.c
+│   ├── files.c
+│   ├── linked_list.c
+│   └── buffer_overflow.c
 └── README.md
 ```
 
@@ -107,6 +126,8 @@ Each week includes hands-on problem sets that reinforce the concepts:
 - 🗳️ **Plurality/Runoff** - Election simulation systems
 - 💾 **Filter** - Image processing and manipulation
 - 🔍 **Speller** - Hash tables and spell checking
+- 🧠 **Memory Recovery** - Digital forensics and file systems
+- 📞 **Dynamic Phonebook** - Memory management and data structures
 
 ## 💻 How to Use This Repository
 
