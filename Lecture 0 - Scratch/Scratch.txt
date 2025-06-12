@@ -1,0 +1,100 @@
+Lecture 0 - Scratch
+
+What is Computer Science?
+- Problem solving
+- Input → Algorithm → Output
+- Computational thinking
+
+Binary (Base-2):
+- Computers use binary (0s and 1s)
+- Each digit is a "bit"
+- 8 bits = 1 byte
+- Examples:
+  * 0 = 0
+  * 1 = 1
+  * 10 = 2
+  * 11 = 3
+  * 100 = 4
+  * 101 = 5
+  * 110 = 6
+  * 111 = 7
+
+Representing Information:
+- Numbers: Binary
+- Letters: ASCII (American Standard Code for Information Interchange)
+  * A = 65, B = 66, C = 67, etc.
+- Colors: RGB (Red, Green, Blue values)
+- Images: Pixels with RGB values
+- Videos: Sequences of images
+- Sounds: Waveforms
+
+Algorithms:
+- Step-by-step instructions
+- Efficiency matters
+- Example: Phone book search
+  * Linear search: O(n)
+  * Binary search: O(log n)
+
+Pseudocode:
+- English-like syntax for algorithms
+- Example:
+  1. Pick up phone book
+  2. Open to middle of phone book
+  3. Look at page
+  4. If person is on page
+       Call person
+  5. Else if person is earlier in book
+       Open to middle of left half of book
+       Go back to line 3
+  6. Else if person is later in book
+       Open to middle of right half of book
+       Go back to line 3
+  7. Else
+       Quit
+
+Scratch Programming:
+- Visual programming language
+- Drag and drop blocks
+- No syntax errors
+
+Key Scratch Concepts:
+- Sprites: Objects that can move and interact
+- Scripts: Code that controls sprites
+- Stage: Background/environment
+
+Scratch Blocks:
+1. Motion: move, turn, go to position
+2. Looks: change costume, say, show/hide
+3. Sound: play sound, change volume
+4. Events: when clicked, when key pressed
+5. Control: forever, repeat, if/else
+6. Sensing: touching, mouse position
+7. Variables: create and use variables
+8. My Blocks: custom functions
+
+Programming Concepts in Scratch:
+- Sequences: Order of operations matters
+- Conditions: If/else statements
+- Loops: Repeat actions
+- Variables: Store and use data
+- Functions: Reusable code blocks
+- Events: Respond to user input
+
+Common Scratch Projects:
+- Moving sprites
+- Interactive stories
+- Simple games
+- Animations
+- Music and sound effects
+
+Programming Best Practices:
+- Break problems into smaller parts
+- Test frequently
+- Use meaningful names
+- Add comments/documentation
+- Plan before coding
+
+Abstraction:
+- Hiding complexity
+- Using functions/blocks without knowing implementation
+- Building on existing solutions
