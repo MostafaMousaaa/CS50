@@ -1,0 +1,68 @@
+Lecture 2 - Arrays
+
+Introduction to Arrays:
+- Collection of values of the same type
+- Stored in contiguous memory locations
+- Zero-indexed (first element at index 0)
+- Fixed size once declared
+
+Array Declaration:
+- int numbers[3];
+- int scores[] = {72, 73, 33};
+- char letters[26];
+
+Array Access:
+- Use square brackets with index
+- scores[0] = 72 (first element)
+- scores[2] = 33 (third element)
+
+Strings as Arrays:
+- string is actually char[]
+- Each character stored in array
+- Null terminator '\0' marks end
+- "Hi!" is ['H', 'i', '!', '\0']
+
+String Functions (string.h):
+- strlen(): length of string
+- strcmp(): compare strings
+- strcpy(): copy strings
+- strcat(): concatenate strings
+- toupper()/tolower(): change case
+
+Memory and Arrays:
+- Arrays stored in contiguous memory
+- Array name represents address of first element
+- Accessing beyond bounds causes undefined behavior
+
+Multidimensional Arrays:
+- Arrays of arrays
+- int matrix[3][3];
+- Access: matrix[row][column]
+
+Command-line Arguments:
+- int main(int argc, char *argv[])
+- argc: argument count
+- argv: argument vector (array of strings)
+- argv[0] is program name
+
+Common Array Operations:
+- Initialize all elements
+- Find minimum/maximum
+- Calculate average
+- Search for values
+- Sort elements
+
+Key Points:
+- Arrays have fixed size
+- No bounds checking in C
+- Strings are null-terminated arrays
+- Memory addresses are important
+- Command-line args provide input flexibility
+
+Example Programs:
+- arrays_basic.c: Basic array operations
+- strings.c: String manipulation
+- caesar.c: Caesar cipher implementation
+- readability.c: Text readability analysis
+- substitution.c: Substitution cipher
+- argv.c: Command-line arguments

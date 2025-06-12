@@ -1,0 +1,81 @@
+Lecture 1 - C Programming
+
+Introduction to C:
+- Lower-level programming language
+- Compiled language (vs interpreted)
+- More control over computer's resources
+- Foundation for many other languages
+
+Program Structure:
+- #include: preprocessor directive
+- stdio.h: standard input/output library
+- main(): entry point of program
+- printf(): function to print text
+- \n: newline character
+- return 0: successful termination
+
+Compiling:
+- Source code (.c) → Machine code
+- Command: clang hello.c
+- Creates a.out (executable file)
+- Run with: ./a.out
+- Custom name: clang -o hello hello.c
+
+CS50 Library:
+- #include <cs50.h>
+- Provides get_string(), get_int(), etc.
+- Compile with: clang -lcs50 program.c
+
+Data Types:
+- int: integers (4 bytes, -2^31 to 2^31-1)
+- long: larger integers (8 bytes)
+- float: decimal numbers (4 bytes, ~7 digits precision)
+- double: larger decimals (8 bytes, ~15 digits precision)
+- char: single character (1 byte)
+- string: sequence of characters
+- bool: true/false (requires #include <stdbool.h>)
+
+Format Codes:
+- %d or %i: integers
+- %ld: long integers
+- %f: floats/doubles
+- %c: characters
+- %s: strings
+
+Operators:
+- Arithmetic: +, -, *, /, %
+- Assignment: =, +=, -=, *=, /=
+- Comparison: ==, !=, <, >, <=, >=
+- Logical: &&, ||, !
+- Increment/Decrement: ++, --
+
+Control Structures:
+- Conditionals: if, else if, else
+- Loops: while, for, do-while
+- Functions: reusable code blocks
+
+Scope:
+- Local variables: declared inside functions
+- Global variables: declared outside functions
+- Variables exist only in their scope
+
+Common Mistakes:
+- Forgetting semicolons
+- Using = instead of == for comparison
+- Integer overflow
+- Floating-point imprecision
+- Forgetting to include necessary headers
+
+Key Concepts:
+- Abstraction: Breaking down problems
+- Precision: Exact vs approximate values
+- Design: Writing clean, readable code
+- Style: Consistent formatting and naming
+
+Example Programs:
+- hello.c: Basic hello world
+- calculator.c: Simple arithmetic
+- discount.c: Function example with parameters
+- mario.c: Nested loops and user input
+- conditions.c: Conditional statements
+- loops.c: Different loop types
