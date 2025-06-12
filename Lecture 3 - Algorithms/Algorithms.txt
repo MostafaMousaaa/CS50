@@ -7,3 +7,80 @@ Sorting:
 -Selection Sort
 -Bubble Sort
 -Merge Sort
+
+Big O Notation:
+- Describes upper bound of algorithm's time complexity
+- Common complexities:
+  * O(1) - Constant time
+  * O(log n) - Logarithmic time
+  * O(n) - Linear time
+  * O(n log n) - Linearithmic time
+  * O(n²) - Quadratic time
+  * O(n³) - Cubic time
+  * O(2^n) - Exponential time
+
+Big Ω (Omega) Notation:
+- Describes lower bound (best case)
+- Examples:
+  * Linear search: Ω(1)
+  * Binary search: Ω(1)
+  * Selection sort: Ω(n²)
+
+Big Θ (Theta) Notation:
+- Describes tight bound (average case)
+- When upper and lower bounds are the same
+
+Searching Algorithms:
+
+Linear Search:
+- Time: O(n), Ω(1)
+- Space: O(1)
+- Works on unsorted data
+- Check each element sequentially
+
+Binary Search:
+- Time: O(log n), Ω(1)
+- Space: O(1)
+- Requires sorted data
+- Divide and conquer approach
+
+Sorting Algorithms:
+
+Selection Sort:
+- Time: O(n²), Ω(n²)
+- Space: O(1)
+- Find minimum, swap with first
+- Repeat for remaining elements
+
+Bubble Sort:
+- Time: O(n²), Ω(n)
+- Space: O(1)
+- Compare adjacent elements
+- Swap if out of order
+
+Merge Sort:
+- Time: O(n log n), Ω(n log n)
+- Space: O(n)
+- Divide and conquer
+- Recursively split and merge
+
+Recursion:
+- Function calls itself
+- Base case prevents infinite recursion
+- Recursive case breaks down problem
+- Examples: factorial, fibonacci, merge sort
+
+Key Concepts:
+- Trade-offs: time vs space complexity
+- Preprocessing can improve efficiency
+- Algorithm choice depends on data characteristics
+- Stability in sorting (maintaining relative order)
+
+Example Programs:
+- linear_search.c: Linear search implementation
+- binary_search.c: Binary search implementation
+- selection_sort.c: Selection sort implementation
+- bubble_sort.c: Bubble sort implementation
+- merge_sort.c: Merge sort implementation
+- recursion.c: Recursive examples
+- phonebook.c: Practical search example
