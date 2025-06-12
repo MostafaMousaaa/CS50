@@ -1,1 +1,81 @@
 Memory
+
+Introduction to Memory:
+- Every variable has a memory address
+- Memory is like a grid of bytes
+- Each byte has a unique address
+- Programs can access memory directly
+
+Hexadecimal:
+- Base-16 number system
+- Uses digits 0-9 and letters A-F
+- Memory addresses often shown in hex
+- 0x prefix indicates hexadecimal
+- Examples: 0x10 = 16, 0xFF = 255
+
+Pointers:
+- Variables that store memory addresses
+- "Point to" other variables
+- Declared with * operator
+- & operator gets address of variable
+- * operator dereferences (gets value at address)
+
+Pointer Syntax:
+- int *p; // p is a pointer to an int
+- p = &x; // p stores address of x
+- *p = 50; // sets value at address p to 50
+
+Arrays and Pointers:
+- Array name is pointer to first element
+- arr[i] is equivalent to *(arr + i)
+- Pointer arithmetic: moving through memory
+- strings are char* (pointer to char)
+
+Dynamic Memory Allocation:
+- malloc(): allocate memory on heap
+- free(): deallocate memory
+- Memory leaks: forgetting to free
+- Valgrind: tool to detect memory errors
+
+Memory Layout:
+- Stack: local variables, function calls
+- Heap: dynamically allocated memory
+- Global: global variables
+- Text: program code
+
+Common Memory Errors:
+- Segmentation fault: accessing invalid memory
+- Buffer overflow: writing past array bounds
+- Memory leaks: not freeing allocated memory
+- Double free: freeing same memory twice
+- Use after free: accessing freed memory
+
+File I/O:
+- fopen(): open file
+- fread()/fwrite(): read/write data
+- fclose(): close file
+- FILE* pointer for file operations
+
+Image Processing:
+- Images as arrays of pixels
+- BMP file format structure
+- Headers and pixel data
+- Filtering and manipulation
+
+Key Concepts:
+- Memory addresses are just numbers
+- Pointers provide direct memory access
+- Manual memory management with malloc/free
+- Understanding memory layout is crucial
+- Memory errors can be subtle but dangerous
+
+Example Programs:
+- addresses.c: Basic pointer operations
+- copy.c: String copying with malloc
+- memory.c: Dynamic memory allocation
+- swap.c: Swapping values with pointers
+- phonebook.c: Dynamic data structures
+- filter.c: Image processing example
+- files.c: File I/O operations
+- linked_list.c: Dynamic data structure
+
