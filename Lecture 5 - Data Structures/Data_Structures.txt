@@ -1,0 +1,116 @@
+Lecture 5 - Data Structures
+
+Abstract Data Types:
+- Queue: First In, First Out (FIFO)
+- Stack: Last In, First Out (LIFO)
+- Set: Collection of unique values
+- Dictionary/Map: Key-value pairs
+
+Linked Lists:
+- Dynamic data structure
+- Nodes contain data and pointer to next
+- No fixed size limitation
+- Memory not contiguous
+- O(n) search time, O(1) insertion at beginning
+
+Types of Linked Lists:
+- Singly linked: one pointer (next)
+- Doubly linked: two pointers (next, prev)
+- Circular linked: last node points to first
+
+Linked List Operations:
+- Insert: beginning O(1), middle O(n), end O(n)
+- Delete: beginning O(1), middle O(n), end O(n)
+- Search: O(n) linear search
+- Access: O(n) to reach specific index
+
+Trees:
+- Hierarchical data structure
+- Root node at top
+- Parent-child relationships
+- Leaves: nodes with no children
+- Height: longest path from root to leaf
+
+Binary Trees:
+- Each node has at most 2 children
+- Left and right subtrees
+- Binary search tree (BST): ordered structure
+- Left < parent < right
+
+Binary Search Trees:
+- Efficient searching: O(log n) average
+- Insertion: O(log n) average
+- Deletion: O(log n) average
+- Worst case: O(n) when unbalanced
+
+Tree Traversals:
+- In-order: left, root, right
+- Pre-order: root, left, right
+- Post-order: left, right, root
+- Level-order: breadth-first
+
+Hash Tables:
+- Key-value data structure
+- Hash function maps keys to indices
+- Average O(1) insertion, deletion, search
+- Collision handling: chaining, linear probing
+
+Hash Functions:
+- Should distribute keys uniformly
+- Deterministic: same input = same output
+- Examples: modulo, multiplication method
+- Good hash functions minimize collisions
+
+Collision Resolution:
+- Chaining: linked lists at each bucket
+- Open addressing: find next available slot
+- Linear probing: check next index
+- Quadratic probing: check i² positions
+
+Tries (Prefix Trees):
+- Tree for storing strings
+- Each path represents characters
+- Root to leaf forms complete word
+- Efficient for autocomplete, spell checking
+- Space-time tradeoff
+
+Trie Operations:
+- Insert: O(length of word)
+- Search: O(length of word)
+- Delete: O(length of word)
+- Space: O(total characters stored)
+
+Performance Comparison:
+Data Structure | Search | Insert | Delete
+Array (unsorted)| O(n)   | O(1)   | O(n)
+Array (sorted)  | O(log n)| O(n)  | O(n)
+Linked List     | O(n)   | O(1)*  | O(1)*
+BST (balanced)  | O(log n)| O(log n)| O(log n)
+Hash Table      | O(1)** | O(1)** | O(1)**
+Trie           | O(k)   | O(k)   | O(k)
+
+*At beginning, O(n) for arbitrary position
+**Average case, O(n) worst case
+
+Choosing Data Structures:
+- Arrays: fixed size, indexed access
+- Linked Lists: dynamic size, frequent insertions
+- BST: ordered data, range queries
+- Hash Tables: fast lookups, no ordering needed
+- Tries: string operations, prefix matching
+
+Key Concepts:
+- Time-space tradeoffs
+- Cache efficiency and memory locality
+- Balancing trees for optimal performance
+- Hash function quality affects performance
+- Choose structure based on use case
+
+Example Programs:
+- linked_lists.c: Singly and doubly linked lists
+- binary_tree.c: Binary tree implementation
+- bst.c: Binary search tree operations
+- hash_table.c: Hash table with chaining
+- trie.c: Trie implementation for strings
+- stack.c: Stack using linked list
+- queue.c: Queue using linked list
