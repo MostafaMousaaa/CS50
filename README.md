@@ -49,6 +49,13 @@ As David always emphasizes, CS50 isn't just about learning to code—it's about 
 - **Dynamic memory allocation** - malloc() and free()
 - **Memory leaks** - What happens when you forget to clean up
 
+### Week 5: Data Structures - *Abstract Data Types*
+- **Linked lists** - Dynamic memory allocation
+- **Trees and binary search trees** - Hierarchical data
+- **Hash tables** - Fast lookups with O(1) average time
+- **Tries** - Efficient string storage and retrieval
+- **Stacks and queues** - LIFO and FIFO data structures
+
 ## 🛠️ Technologies & Tools
 
 ```
@@ -100,6 +107,14 @@ CS50/
 │   ├── files.c
 │   ├── linked_list.c
 │   └── buffer_overflow.c
+├── 📂 Lecture 5 - Data Structures/
+│   ├── Data_Structures.txt
+│   ├── linked_lists.c
+│   ├── binary_tree.c
+│   ├── hash_table.c
+│   ├── trie.c
+│   ├── stack.c
+│   └── queue.c
 └── README.md
 ```
 
@@ -128,6 +143,8 @@ Each week includes hands-on problem sets that reinforce the concepts:
 - 🔍 **Speller** - Hash tables and spell checking
 - 🧠 **Memory Recovery** - Digital forensics and file systems
 - 📞 **Dynamic Phonebook** - Memory management and data structures
+- 🌳 **Family Trees** - Binary search trees and genealogy
+- 📚 **Dictionary** - Trie implementation for fast word lookup
 
 ## 💻 How to Use This Repository
 
