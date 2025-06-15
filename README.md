@@ -56,11 +56,20 @@ As David always emphasizes, CS50 isn't just about learning to code—it's about 
 - **Tries** - Efficient string storage and retrieval
 - **Stacks and queues** - LIFO and FIFO data structures
 
+### Week 6: Python - *Higher-Level Programming*
+- **Python syntax** - From C to Python transition
+- **Data structures** - Lists, dictionaries, sets, tuples
+- **File I/O** - Reading/writing files, CSV, JSON
+- **Libraries** - Importing modules and packages
+- **Image processing** - PIL for image manipulation
+- **Face recognition** - Computer vision applications
+
 ## 🛠️ Technologies & Tools
 
 ```
 Languages: C, Python, SQL, HTML, CSS, JavaScript
 Tools: VS Code, GitHub, Flask, SQLite
+Libraries: CS50, PIL, face_recognition, csv, json
 Concepts: Algorithms, Data Structures, Memory Management, Web Development
 ```
 
@@ -115,6 +124,18 @@ CS50/
 │   ├── trie.c
 │   ├── stack.c
 │   └── queue.c
+├── 📂 Lecture 6 - Python/
+│   ├── Python.txt
+│   ├── hello.py
+│   ├── calculator.py
+│   ├── mario.py
+│   ├── phonebook.py
+│   ├── dna.py
+│   ├── cash.py
+│   ├── readability.py
+│   ├── data_structures.py
+│   ├── file_io.py
+│   └── face_recognition.py
 └── README.md
 ```
 
@@ -145,6 +166,9 @@ Each week includes hands-on problem sets that reinforce the concepts:
 - 📞 **Dynamic Phonebook** - Memory management and data structures
 - 🌳 **Family Trees** - Binary search trees and genealogy
 - 📚 **Dictionary** - Trie implementation for fast word lookup
+- 🧬 **DNA Analysis** - String processing and pattern matching
+- 🎭 **Face Recognition** - Computer vision and image processing
+- 💰 **Cash/Credit** - Greedy algorithms and validation
 
 ## 💻 How to Use This Repository
 
@@ -160,7 +184,17 @@ Each week includes hands-on problem sets that reinforce the concepts:
    ./program
    ```
 
-3. **Follow along with lectures** using the organized notes and code examples
+3. **Run Python programs**:
+   ```bash
+   python program.py
+   ```
+
+4. **Install Python dependencies** (for advanced programs):
+   ```bash
+   pip install cs50 pillow face-recognition
+   ```
+
+5. **Follow along with lectures** using the organized notes and code examples
 
 ## 🌟 David's Inspirational Quotes
 
