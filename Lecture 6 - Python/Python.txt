@@ -114,3 +114,29 @@ Example Programs:
 - cash.py: Greedy algorithm for change
 - readability.py: Text analysis
 - filter.py: Image processing with PIL
+- face_recognition.py: Face detection and recognition
+- data_structures.py: Python data structures demo
+- file_io.py: File input/output operations
+
+Face Recognition Concepts:
+- Image processing with PIL (Python Imaging Library)
+- Face detection: finding faces in images
+- Face encoding: converting faces to numerical data
+- Face comparison: measuring similarity between faces
+- Machine learning applications in computer vision
+- Real-world applications: security, photo tagging
+
+Advanced Python Features:
+- List comprehensions: [x for x in iterable if condition]
+- Dictionary comprehensions: {k: v for k, v in items}
+- Lambda functions: lambda x: x * 2
+- Generators: yield keyword for memory efficiency
+- Decorators: @decorator syntax
+- Context managers: with statement
+
+Python vs C Performance:
+- Python: ~100x slower than C
+- Trade-off: development time vs execution time
+- Use C extensions for performance-critical code
+- NumPy/SciPy for scientific computing
+- Profile before optimizing
