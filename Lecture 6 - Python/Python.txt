@@ -1,0 +1,116 @@
+Lecture 6 - Python
+
+Introduction to Python:
+- High-level programming language
+- Interpreted (not compiled)
+- Dynamic typing
+- Automatic memory management
+- More readable and concise than C
+
+Key Differences from C:
+- No semicolons required
+- Indentation defines code blocks
+- No need to declare variable types
+- Automatic memory management (garbage collection)
+- No pointers (references instead)
+- Built-in data structures
+
+Python Syntax:
+- Variables: x = 50 (no type declaration)
+- Strings: name = "Alice" or name = 'Alice'
+- Comments: # single line, """multi-line"""
+- Print: print("Hello, world!")
+
+Data Types:
+- int: integers (arbitrary precision)
+- float: floating-point numbers
+- str: strings (immutable)
+- bool: True/False
+- list: ordered, mutable collection [1, 2, 3]
+- tuple: ordered, immutable collection (1, 2, 3)
+- dict: key-value pairs {"key": "value"}
+- set: unordered unique values {1, 2, 3}
+
+Control Structures:
+- if/elif/else: conditional statements
+- for: iterate over sequences
+- while: loop with condition
+- Functions: def function_name():
+
+Lists vs Arrays:
+- Dynamic size (can grow/shrink)
+- Mixed data types allowed
+- Built-in methods: append(), remove(), sort()
+- List comprehensions: [x*2 for x in range(10)]
+
+Dictionaries vs Hash Tables:
+- Built-in key-value data structure
+- Fast O(1) average lookup
+- Syntax: person = {"name": "Alice", "age": 30}
+- Methods: keys(), values(), items()
+
+String Operations:
+- Concatenation: "Hello" + " " + "World"
+- Formatting: f"Hello, {name}!"
+- Methods: upper(), lower(), split(), strip()
+- Slicing: text[0:5], text[:3], text[2:]
+
+File I/O:
+- Open files: with open("file.txt", "r") as f:
+- Read: f.read(), f.readline(), f.readlines()
+- Write: with open("file.txt", "w") as f: f.write()
+- CSV: import csv module
+
+Exception Handling:
+- try/except blocks
+- Handle specific exceptions
+- finally block for cleanup
+- raise exceptions
+
+Object-Oriented Programming:
+- Classes: class Person:
+- Objects: instances of classes
+- Methods: functions inside classes
+- Inheritance: class Student(Person):
+
+Libraries and Modules:
+- import statement
+- Standard library: os, sys, random, math
+- Third-party: requests, numpy, pandas
+- Package management with pip
+
+Common CS50 Libraries:
+- cs50: get_int(), get_string(), get_float()
+- sys: command-line arguments (sys.argv)
+- csv: reading/writing CSV files
+- PIL: image processing
+
+Performance Considerations:
+- Python is slower than C
+- Readability vs performance tradeoff
+- Use appropriate data structures
+- Profile code for bottlenecks
+
+Migration from C to Python:
+- Fewer lines of code
+- Less memory management
+- More built-in functionality
+- Easier string manipulation
+- Better error handling
+
+Best Practices:
+- Follow PEP 8 style guide
+- Use meaningful variable names
+- Write docstrings for functions
+- Handle exceptions properly
+- Use list/dict comprehensions when appropriate
+
+Example Programs:
+- hello.py: Basic Python syntax
+- calculator.py: Simple arithmetic
+- mario.py: Mario pyramid in Python
+- phonebook.py: Dictionary-based phonebook
+- dna.py: DNA sequence analysis
+- cash.py: Greedy algorithm for change
+- readability.py: Text analysis
+- filter.py: Image processing with PIL
