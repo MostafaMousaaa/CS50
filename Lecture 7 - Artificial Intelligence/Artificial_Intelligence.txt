@@ -1,0 +1,179 @@
+Lecture 7 - Artificial Intelligence
+
+Introduction to AI:
+- Artificial Intelligence: computer systems performing tasks requiring human intelligence
+- Current AI revolution driven by machine learning and large language models
+- AI applications: image generation, text generation, decision making, pattern recognition
+
+Image Generation:
+- AI can create realistic images from text descriptions
+- DALL-E, Midjourney, Stable Diffusion
+- Text-to-image models trained on millions of image-text pairs
+- Applications: art, design, content creation, prototyping
+
+ChatGPT and Large Language Models:
+- Conversational AI that can understand and generate human-like text
+- Trained on vast amounts of text data from the internet
+- Can write code, answer questions, explain concepts, translate languages
+- GPT (Generative Pre-trained Transformer) architecture
+
+Prompt Engineering:
+- Art of crafting effective prompts for AI systems
+- Clear, specific instructions yield better results
+- Context and examples improve AI performance
+- Iterative process of refining prompts
+
+CS50.ai:
+- AI-powered teaching assistant for CS50
+- Helps students with coding questions and concepts
+- Demonstrates practical application of AI in education
+- Personalized learning assistance
+
+Generative AI:
+- AI systems that create new content (text, images, code, audio)
+- Based on patterns learned from training data
+- Examples: GPT for text, DALL-E for images, GitHub Copilot for code
+- Transforming creative industries and workflows
+
+Decision Trees:
+- Tree-like model for making decisions
+- Internal nodes: decision points (conditions)
+- Branches: possible outcomes
+- Leaves: final decisions/classifications
+- Easy to understand and interpret
+
+Decision Tree Construction:
+- Start with root node containing all data
+- Choose best attribute to split on
+- Create branches for each possible value
+- Repeat recursively for each branch
+- Stop when pure nodes or stopping criteria met
+
+Information Gain:
+- Measure used to select best splitting attribute
+- Based on entropy (measure of randomness/impurity)
+- Higher information gain = better split
+- Entropy = -Σ(p * log2(p)) for all classes
+
+Minimax Algorithm:
+- Game-playing algorithm for two-player zero-sum games
+- Assumes both players play optimally
+- Maximizing player (MAX) tries to maximize score
+- Minimizing player (MIN) tries to minimize score
+- Evaluates game tree to determine best move
+
+Minimax Process:
+1. Generate game tree to desired depth
+2. Evaluate leaf nodes with utility function
+3. Propagate values up the tree
+4. MAX nodes choose maximum child value
+5. MIN nodes choose minimum child value
+6. Root value determines best move
+
+Alpha-Beta Pruning:
+- Optimization technique for minimax
+- Eliminates branches that won't affect final decision
+- Alpha: best value found for MAX player
+- Beta: best value found for MIN player
+- Prune when alpha >= beta
+
+Machine Learning:
+- Algorithms that improve performance through experience
+- Learn patterns from data without explicit programming
+- Types: supervised, unsupervised, reinforcement learning
+
+Supervised Learning:
+- Learn from labeled training data (input-output pairs)
+- Goal: predict outputs for new inputs
+- Classification: predict categories/classes
+- Regression: predict continuous numerical values
+
+Classification vs Regression:
+- Classification: spam/not spam, image recognition, medical diagnosis
+- Regression: stock prices, house values, temperature prediction
+- Different algorithms and evaluation metrics for each
+
+k-Nearest Neighbors (k-NN):
+- Simple classification algorithm
+- Classify based on k closest training examples
+- "Lazy learning" - no explicit training phase
+- Choice of k affects performance (odd numbers avoid ties)
+
+Distance Metrics:
+- Euclidean distance: straight-line distance
+- Manhattan distance: sum of absolute differences
+- Distance determines which neighbors are "closest"
+- Feature scaling important for fair comparison
+
+Unsupervised Learning:
+- Find patterns in data without labels
+- Clustering: group similar data points
+- Dimensionality reduction: simplify data representation
+- Market segmentation, data compression, anomaly detection
+
+Deep Learning:
+- Machine learning using neural networks with multiple layers
+- Inspired by biological neural networks
+- Automatic feature extraction from raw data
+- Revolutionized computer vision, NLP, and many other fields
+
+Neural Networks:
+- Networks of interconnected nodes (neurons)
+- Each connection has a weight
+- Neurons apply activation functions to weighted inputs
+- Training adjusts weights to minimize prediction errors
+
+Deep Neural Networks:
+- Input layer: receives data
+- Hidden layers: extract increasingly complex features
+- Output layer: produces final predictions
+- More layers = "deeper" network
+
+Training Neural Networks:
+- Backpropagation: algorithm for adjusting weights
+- Gradient descent: optimization method
+- Loss function: measures prediction errors
+- Iterative process of forward pass and backward pass
+
+Large Language Models (LLMs):
+- Neural networks trained on massive text datasets
+- Transformer architecture enables understanding of context
+- Billions or trillions of parameters
+- Can generate human-like text, translate, summarize, code
+
+How LLMs Work:
+- Predict next word based on previous context
+- Attention mechanisms focus on relevant parts of input
+- Pre-training on general text, fine-tuning for specific tasks
+- Emergent capabilities from scale and training
+
+Hallucinations in AI:
+- AI generating false or nonsensical information
+- Appears confident even when wrong
+- Challenge for reliability and trust
+- Mitigation: fact-checking, verification, transparency about limitations
+
+AI Ethics and Considerations:
+- Bias in training data leads to biased AI
+- Privacy concerns with data collection
+- Job displacement and economic impacts
+- Need for responsible AI development and use
+
+Applications of AI:
+- Search engines and recommendation systems
+- Autonomous vehicles and robotics
+- Medical diagnosis and drug discovery
+- Financial trading and fraud detection
+- Content creation and personalization
+
+Future of AI:
+- Continued improvement in capabilities
+- Integration into more aspects of daily life
+- Need for AI literacy and education
+- Balancing benefits with risks and ethical concerns
+
+Key Takeaways:
+- AI is transforming how we work and create
+- Understanding AI helps us use it effectively
+- Critical thinking remains essential when using AI tools
+- AI augments human capabilities rather than replacing human judgment
