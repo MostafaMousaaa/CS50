@@ -64,13 +64,22 @@ As David always emphasizes, CS50 isn't just about learning to code—it's about 
 - **Image processing** - PIL for image manipulation
 - **Face recognition** - Computer vision applications
 
+### Week 7: Artificial Intelligence - *Machine Learning & AI*
+- **Generative AI** - ChatGPT, image generation, and AI applications
+- **Decision trees** - Classification algorithms and information gain
+- **Minimax algorithm** - Game-playing AI with alpha-beta pruning
+- **Machine learning** - Supervised and unsupervised learning concepts
+- **Neural networks** - Deep learning and large language models
+- **Prompt engineering** - Crafting effective AI prompts
+- **AI ethics** - Hallucinations, bias, and responsible AI use
+
 ## 🛠️ Technologies & Tools
 
 ```
 Languages: C, Python, SQL, HTML, CSS, JavaScript
 Tools: VS Code, GitHub, Flask, SQLite
 Libraries: CS50, PIL, face_recognition, csv, json
-Concepts: Algorithms, Data Structures, Memory Management, Web Development
+AI Concepts: Machine Learning, Neural Networks, Decision Trees, Minimax
 ```
 
 ## 📁 Repository Structure
@@ -136,6 +145,12 @@ CS50/
 │   ├── data_structures.py
 │   ├── file_io.py
 │   └── face_recognition.py
+├── 📂 Lecture 7 - Artificial Intelligence/
+│   ├── Artificial_Intelligence.txt
+│   ├── decision_tree.py
+│   ├── minimax_tictactoe.py
+│   ├── simple_chatbot.py
+│   └── prompt_engineering.py
 └── README.md
 ```
 
@@ -169,6 +184,8 @@ Each week includes hands-on problem sets that reinforce the concepts:
 - 🧬 **DNA Analysis** - String processing and pattern matching
 - 🎭 **Face Recognition** - Computer vision and image processing
 - 💰 **Cash/Credit** - Greedy algorithms and validation
+- 🎯 **Tic-Tac-Toe AI** - Minimax algorithm implementation
+- 🤖 **Chatbot** - Natural language processing basics
 
 ## 💻 How to Use This Repository
 
@@ -205,6 +222,10 @@ Each week includes hands-on problem sets that reinforce the concepts:
 > *"Don't be afraid to break things. That's how you learn."*
 
 > *"In programming, there's often more than one way to solve a problem. Focus on correctness first, then optimize."*
+
+> *"AI is a tool to augment human intelligence, not replace human judgment."*
+
+> *"Understanding what's underneath the hood applies to AI too - know how these systems work."*
 
 ## 🤝 Contributing
 
