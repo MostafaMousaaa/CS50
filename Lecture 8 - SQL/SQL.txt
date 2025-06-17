@@ -1,0 +1,158 @@
+Lecture 8 - SQL (Structured Query Language)
+
+Introduction to Databases:
+- Databases store and organize large amounts of data
+- More efficient than flat files for complex data
+- Enable concurrent access by multiple users
+- Provide data integrity and consistency
+
+Flat-file Databases:
+- Simple text files (CSV, spreadsheets)
+- One table per file
+- Easy to understand and create
+- Limitations: redundancy, inconsistency, no relationships
+
+Problems with Flat Files:
+- Data redundancy (same information repeated)
+- Update anomalies (changing data in multiple places)
+- No data integrity constraints
+- Difficult to represent relationships
+- No concurrent access control
+
+Relational Databases:
+- Data organized in tables (relations)
+- Tables connected through relationships
+- Eliminates redundancy through normalization
+- ACID properties: Atomicity, Consistency, Isolation, Durability
+
+Database Management Systems (DBMS):
+- Software to create, maintain, and query databases
+- Examples: SQLite, MySQL, PostgreSQL, Oracle
+- Handle concurrent access, backups, optimization
+
+Tables and Relationships:
+- Tables: collections of related data
+- Rows (records): individual data entries
+- Columns (fields): attributes of the data
+- Relationships: connections between tables
+
+Schema:
+- Structure/blueprint of the database
+- Defines tables, columns, data types, constraints
+- Establishes relationships between tables
+- Created using DDL (Data Definition Language)
+
+Data Types:
+- INTEGER: whole numbers
+- REAL/FLOAT: decimal numbers
+- TEXT/VARCHAR: character strings
+- BLOB: binary data
+- DATE/TIME: date and time values
+- BOOLEAN: true/false values
+
+Constraints:
+- PRIMARY KEY: unique identifier for each row
+- FOREIGN KEY: references primary key in another table
+- UNIQUE: ensures column values are unique
+- NOT NULL: column cannot be empty
+- CHECK: validates data against conditions
+- DEFAULT: provides default value
+
+Primary Keys:
+- Uniquely identifies each row in a table
+- Cannot be NULL or duplicate
+- Can be single column or combination of columns
+- Automatically creates an index
+
+Foreign Keys:
+- Creates relationship between tables
+- References primary key of another table
+- Maintains referential integrity
+- Prevents orphaned records
+
+SQL Commands Categories:
+1. DDL (Data Definition Language): CREATE, ALTER, DROP
+2. DML (Data Manipulation Language): INSERT, UPDATE, DELETE
+3. DQL (Data Query Language): SELECT
+4. DCL (Data Control Language): GRANT, REVOKE
+
+Basic SQL Queries:
+- SELECT: retrieve data
+- FROM: specify table
+- WHERE: filter conditions
+- ORDER BY: sort results
+- LIMIT: restrict number of results
+
+Advanced Querying:
+- JOIN: combine data from multiple tables
+- GROUP BY: group rows with same values
+- HAVING: filter groups
+- Subqueries: nested SELECT statements
+- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
+
+Types of JOINs:
+- INNER JOIN: records with matches in both tables
+- LEFT JOIN: all records from left table
+- RIGHT JOIN: all records from right table
+- FULL OUTER JOIN: all records from both tables
+
+Indexes:
+- Data structures that improve query performance
+- Trade-off: faster queries vs slower inserts/updates
+- Automatically created for primary keys
+- Can be created on frequently queried columns
+
+Index Types:
+- B-tree: general purpose, good for range queries
+- Hash: fast equality lookups
+- Composite: multiple columns
+- Unique: enforces uniqueness
+
+Python and SQL:
+- Use libraries like sqlite3, SQLAlchemy
+- Execute SQL commands from Python
+- Handle results as Python objects
+- Parameterized queries prevent SQL injection
+
+Race Conditions:
+- Multiple users accessing database simultaneously
+- Can lead to inconsistent data
+- Solved with transactions and locking
+- ACID properties ensure data integrity
+
+Transactions:
+- Group of SQL operations treated as single unit
+- Either all succeed (commit) or all fail (rollback)
+- Ensure data consistency
+- BEGIN, COMMIT, ROLLBACK commands
+
+SQL Injection Attacks:
+- Malicious SQL code inserted through user input
+- Can read, modify, or delete database data
+- Prevention: parameterized queries, input validation
+- Never concatenate user input directly into SQL
+
+Security Best Practices:
+- Use parameterized queries/prepared statements
+- Validate and sanitize user input
+- Principle of least privilege for database users
+- Regular security audits and updates
+
+Database Design Principles:
+- Normalization: reduce redundancy
+- 1NF: atomic values, unique rows
+- 2NF: no partial dependencies
+- 3NF: no transitive dependencies
+
+Performance Optimization:
+- Use appropriate indexes
+- Optimize query structure
+- Avoid SELECT * in production
+- Use EXPLAIN to analyze query plans
+- Regular database maintenance
+
+Example Tables:
+- students.db: student information system
+- shows.db: TV shows and ratings database
+- movies.db: movie database with genres and ratings
+- phonebook.db: contact management system
