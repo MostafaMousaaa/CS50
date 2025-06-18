@@ -73,12 +73,24 @@ As David always emphasizes, CS50 isn't just about learning to code—it's about 
 - **Prompt engineering** - Crafting effective AI prompts
 - **AI ethics** - Hallucinations, bias, and responsible AI use
 
+### Week 8: SQL - *Databases and Data Management*
+- **Relational databases** - Moving beyond flat files to structured data
+- **SQL syntax** - CREATE, SELECT, INSERT, UPDATE, DELETE operations
+- **Database design** - Schema creation, normalization, and relationships
+- **Primary and foreign keys** - Data integrity and table relationships
+- **Joins and complex queries** - Combining data from multiple tables
+- **Indexes** - Performance optimization for large datasets
+- **Python integration** - Using sqlite3 and database APIs
+- **Security** - SQL injection prevention and parameterized queries
+- **Concurrency** - Race conditions and transaction management
+
 ## 🛠️ Technologies & Tools
 
 ```
 Languages: C, Python, SQL, HTML, CSS, JavaScript
-Tools: VS Code, GitHub, Flask, SQLite
-Libraries: CS50, PIL, face_recognition, csv, json
+Tools: VS Code, GitHub, Flask, SQLite, MySQL
+Libraries: CS50, PIL, face_recognition, sqlite3, csv, json
+Databases: SQLite, relational database concepts
 AI Concepts: Machine Learning, Neural Networks, Decision Trees, Minimax
 ```
 
@@ -151,6 +163,13 @@ CS50/
 │   ├── minimax_tictactoe.py
 │   ├── simple_chatbot.py
 │   └── prompt_engineering.py
+├── 📂 Lecture 8 - SQL/
+│   ├── SQL.txt
+│   ├── create_database.sql
+│   ├── queries.sql
+│   ├── python_sql.py
+│   ├── race_conditions.py
+│   └── csv_to_sql.py
 └── README.md
 ```
 
@@ -186,6 +205,8 @@ Each week includes hands-on problem sets that reinforce the concepts:
 - 💰 **Cash/Credit** - Greedy algorithms and validation
 - 🎯 **Tic-Tac-Toe AI** - Minimax algorithm implementation
 - 🤖 **Chatbot** - Natural language processing basics
+- 🗄️ **Movies Database** - SQL queries and database design
+- 🏠 **Fiftyville Mystery** - SQL detective work with complex queries
 
 ## 💻 How to Use This Repository
 
@@ -206,12 +227,17 @@ Each week includes hands-on problem sets that reinforce the concepts:
    python program.py
    ```
 
-4. **Install Python dependencies** (for advanced programs):
+4. **Execute SQL scripts**:
    ```bash
-   pip install cs50 pillow face-recognition
+   sqlite3 database.db < script.sql
    ```
 
-5. **Follow along with lectures** using the organized notes and code examples
+5. **Install Python dependencies** (for advanced programs):
+   ```bash
+   pip install cs50 pillow face-recognition sqlite3
+   ```
+
+6. **Follow along with lectures** using the organized notes and code examples
 
 ## 🌟 David's Inspirational Quotes
 
@@ -226,6 +252,10 @@ Each week includes hands-on problem sets that reinforce the concepts:
 > *"AI is a tool to augment human intelligence, not replace human judgment."*
 
 > *"Understanding what's underneath the hood applies to AI too - know how these systems work."*
+
+> *"Databases are just fancy filing cabinets - but the organization makes all the difference."*
+
+> *"SQL injection is like leaving your front door wide open - always sanitize your inputs!"*
 
 ## 🤝 Contributing
 
