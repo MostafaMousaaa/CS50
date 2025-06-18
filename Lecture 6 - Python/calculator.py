@@ -1,3 +1,5 @@
+# to install cs50 Library :
+# py -3 -m pip install cs50
 from cs50 import get_float
 
 def add(x, y):
