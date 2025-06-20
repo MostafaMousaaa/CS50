@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Demo</title>
+    <link rel="stylesheet" href="css/form_validation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Advanced Form Validation Demo</h1>
+        
+        <form id="validationForm" novalidate>
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error-message" id="nameError"></div>
+                <div class="success-message" id="nameSuccess">✓ Valid name</div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+                <div class="success-message" id="emailSuccess">✓ Valid email</div>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                <div class="error-message" id="phoneError"></div>
+                <div class="success-message" id="phoneSuccess">✓ Valid phone number</div>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" required>
+                <div class="strength-meter">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="error-message" id="passwordError"></div>
+                <div class="success-message" id="passwordSuccess">✓ Strong password</div>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password *</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div class="error-message" id="confirmPasswordError"></div>
+                <div class="success-message" id="confirmPasswordSuccess">✓ Passwords match</div>
+            </div>
+
+            <!-- Age Field -->
+            <div class="form-group">
+                <label for="age">Age *</label>
+                <input type="number" id="age" name="age" required min="13" max="120">
+                <div class="error-message" id="ageError"></div>
+                <div class="success-message" id="ageSuccess">✓ Valid age</div>
+            </div>
+
+            <!-- Website Field -->
+            <div class="form-group">
+                <label for="website">Website (optional)</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                <div class="error-message" id="websiteError"></div>
+                <div class="success-message" id="websiteSuccess">✓ Valid URL</div>
+            </div>
+
+            <!-- Comments Field -->
+            <div class="form-group">
+                <label for="comments">Comments (max 500 characters)</label>
+                <textarea id="comments" name="comments" rows="4" maxlength="500"></textarea>
+                <div class="character-count" id="commentCount">0/500 characters</div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn" disabled>
+                Submit Form
+            </button>
+        </form>
+
+        <!-- Regular Expression Demo -->
+        <div class="regex-demo">
+            <h3>🔍 Regular Expression Tester</h3>
+            <p>Test different patterns against text input:</p>
+            
+            <div class="regex-test">
+                <input type="text" placeholder="Enter text to test" id="regexInput">
+                <div class="regex-result" id="emailRegexResult">Email</div>
+            </div>
+            
+            <div class="regex-test">
+                <input type="text" placeholder="Enter phone number" id="phoneRegexInput">
+                <div class="regex-result" id="phoneRegexResult">Phone</div>
+            </div>
+            
+            <div class="regex-test">
+                <input type="text" placeholder="Enter password" id="passwordRegexInput">
+                <div class="regex-result" id="passwordRegexResult">Password</div>
+            </div>        </div>
+    </div>
+
+    <script src="js/form_validation.js"></script>
+</body>
+</html>
