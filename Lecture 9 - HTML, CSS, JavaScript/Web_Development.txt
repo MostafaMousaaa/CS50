@@ -1,0 +1,226 @@
+Lecture 9 - HTML, CSS, JavaScript
+
+Introduction to Web Development:
+- Building interactive web applications
+- Client-server architecture
+- Front-end vs back-end development
+- The trinity: HTML (structure), CSS (style), JavaScript (behavior)
+
+The Internet:
+- Global network of interconnected computers
+- Packet-switched network
+- Distributed system with no central authority
+- Built on standardized protocols
+
+TCP/IP (Transmission Control Protocol/Internet Protocol):
+- TCP: Reliable, connection-oriented protocol
+- Ensures data delivery and correct order
+- IP: Addressing and routing protocol
+- IPv4: 32-bit addresses (192.168.1.1)
+- IPv6: 128-bit addresses (longer format)
+
+Ports:
+- Virtual endpoints for network communication
+- 16-bit numbers (0-65535)
+- Well-known ports:
+  * HTTP: 80
+  * HTTPS: 443
+  * FTP: 21
+  * SSH: 22
+  * SMTP: 25
+  * DNS: 53
+
+DNS (Domain Name System):
+- Translates domain names to IP addresses
+- Hierarchical distributed naming system
+- DNS servers cache results for efficiency
+- Process: browser → local DNS → root servers → TLD servers → authoritative servers
+
+DHCP (Dynamic Host Configuration Protocol):
+- Automatically assigns IP addresses to devices
+- Provides network configuration (IP, subnet mask, gateway, DNS)
+- Lease-based system with expiration
+- Simplifies network administration
+
+HTTP (HyperText Transfer Protocol):
+- Application-layer protocol for web communication
+- Request-response model
+- Stateless protocol
+- Methods: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS
+
+HTTP Request Structure:
+- Request line: METHOD /path HTTP/version
+- Headers: metadata about request
+- Body: data sent with request (POST, PUT)
+
+HTTP Response Structure:
+- Status line: HTTP/version status_code reason_phrase
+- Headers: metadata about response
+- Body: content returned
+
+HTTP Status Codes:
+- 1xx: Informational
+- 2xx: Success (200 OK, 201 Created)
+- 3xx: Redirection (301 Moved Permanently, 302 Found)
+- 4xx: Client Error (400 Bad Request, 404 Not Found, 403 Forbidden)
+- 5xx: Server Error (500 Internal Server Error, 503 Service Unavailable)
+
+HTML (HyperText Markup Language):
+- Markup language for web content structure
+- Uses tags to define elements
+- Semantic markup for accessibility and SEO
+- Document Object Model (DOM) representation
+
+HTML5 Features:
+- Semantic elements: header, nav, main, section, article, aside, footer
+- Form enhancements: new input types, validation
+- Media elements: audio, video
+- Canvas for graphics
+- Local storage capabilities
+
+CSS (Cascading Style Sheets):
+- Language for styling HTML elements
+- Separation of content and presentation
+- Cascade: inheritance and specificity rules
+- Selectors: target specific elements
+
+CSS Selectors:
+- Element: p, div, h1
+- Class: .className
+- ID: #idName
+- Attribute: [type="text"]
+- Pseudo-classes: :hover, :active, :focus
+- Pseudo-elements: ::before, ::after
+
+CSS Box Model:
+- Content: actual content area
+- Padding: space inside border
+- Border: edge around padding
+- Margin: space outside border
+
+CSS Layout:
+- Normal flow: block and inline elements
+- Flexbox: one-dimensional layout
+- Grid: two-dimensional layout
+- Positioning: static, relative, absolute, fixed, sticky
+
+Responsive Design:
+- Mobile-first approach
+- Media queries for different screen sizes
+- Flexible grid systems
+- Scalable images and typography
+- Viewport meta tag
+
+Bootstrap:
+- Popular CSS framework
+- Grid system for responsive layouts
+- Pre-styled components
+- JavaScript plugins
+- Utility classes for rapid development
+
+Bootstrap Grid System:
+- 12-column grid
+- Container, row, and column classes
+- Responsive breakpoints: xs, sm, md, lg, xl
+- Offset and ordering classes
+
+JavaScript:
+- Programming language for web interactivity
+- Client-side scripting
+- Event-driven programming
+- Dynamic content manipulation
+
+JavaScript in HTML:
+- Inline: onclick="function()"
+- Internal: <script> tags
+- External: <script src="file.js">
+- Best practice: external files
+
+DOM Manipulation:
+- Document Object Model
+- JavaScript interface to HTML
+- Methods: getElementById, querySelector, addEventListener
+- Properties: innerHTML, textContent, style
+
+JavaScript Events:
+- User interactions: click, mouseover, keypress
+- Page events: load, DOMContentLoaded, resize
+- Form events: submit, change, focus, blur
+- Event listeners for handling interactions
+
+Regular Expressions:
+- Pattern matching for text processing
+- Syntax: /pattern/flags
+- Common patterns:
+  * \d: digits
+  * \w: word characters
+  * \s: whitespace
+  * +: one or more
+  * *: zero or more
+  * ?: zero or one
+
+Form Validation:
+- Client-side validation with JavaScript
+- HTML5 validation attributes
+- Regular expressions for pattern matching
+- Custom validation functions
+- User feedback and error messages
+
+Autocomplete:
+- Enhanced user experience
+- JavaScript-driven suggestions
+- AJAX requests for dynamic data
+- Accessibility considerations
+- Performance optimization
+
+Geolocation:
+- HTML5 Geolocation API
+- Browser-based location detection
+- GPS, WiFi, and cell tower triangulation
+- Privacy considerations and user consent
+- Applications: maps, location-based services
+
+AJAX (Asynchronous JavaScript and XML):
+- Asynchronous requests without page refresh
+- XMLHttpRequest object
+- Fetch API (modern approach)
+- JSON for data exchange
+- Promise-based programming
+
+Web Security Considerations:
+- Cross-Site Scripting (XSS) prevention
+- SQL injection in web forms
+- HTTPS for secure communication
+- Content Security Policy (CSP)
+- Input validation and sanitization
+
+Modern Web Development:
+- Single Page Applications (SPAs)
+- Progressive Web Apps (PWAs)
+- Web APIs and microservices
+- Content Delivery Networks (CDNs)
+- Web performance optimization
+
+Development Tools:
+- Browser Developer Tools
+- Element inspector
+- Console for JavaScript debugging
+- Network tab for monitoring requests
+- Performance profiling
+
+Best Practices:
+- Semantic HTML for accessibility
+- Progressive enhancement
+- Graceful degradation
+- Code organization and modularity
+- Cross-browser compatibility
+- Performance optimization
+
+Example Projects:
+- bingo.html: Interactive bingo board
+- homepage.html: Personal homepage with CSS
+- hello.html: Basic HTML structure
+- form.html: Form validation with JavaScript
+- autocomplete.html: Search with suggestions
+- geolocation.html: Location-based features
+- responsive.html: Mobile-friendly design
