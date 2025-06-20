@@ -84,12 +84,21 @@ As David always emphasizes, CS50 isn't just about learning to code—it's about 
 - **Security** - SQL injection prevention and parameterized queries
 - **Concurrency** - Race conditions and transaction management
 
+### Week 9: HTML, CSS, JavaScript - *Web Development Fundamentals*
+- **Web protocols** - HTTP, DNS, and how the internet works
+- **HTML for structure** - Semantic markup, forms, tables, and accessibility
+- **CSS for style** - Selectors, box model, flexbox, and responsive design
+- **JavaScript for behavior** - DOM manipulation, events, and client-side interactivity
+- **Web APIs** - Geolocation, local storage, and other browser capabilities
+- **Code Organization** - The importance of separating structure, style, and behavior into different files
+
 ## 🛠️ Technologies & Tools
 
 ```
 Languages: C, Python, SQL, HTML, CSS, JavaScript
 Tools: VS Code, GitHub, Flask, SQLite, MySQL
 Libraries: CS50, PIL, face_recognition, sqlite3, csv, json
+Web Technologies: HTML5, CSS3, JavaScript ES6+, Responsive Design, DOM Manipulation
 Databases: SQLite, relational database concepts
 AI Concepts: Machine Learning, Neural Networks, Decision Trees, Minimax
 ```
@@ -170,6 +179,25 @@ CS50/
 │   ├── python_sql.py
 │   ├── race_conditions.py
 │   └── csv_to_sql.py
+├── 📂 Lecture 9 - HTML, CSS, JavaScript/
+│   ├── Web_Development.txt
+│   ├── bingo.html
+│   ├── homepage.html
+│   ├── form_validation.html
+│   ├── autocomplete.html
+│   ├── geolocation.html
+│   ├── 📂 css/
+│   │   ├── bingo.css
+│   │   ├── homepage.css
+│   │   ├── form_validation.css
+│   │   ├── autocomplete.css
+│   │   └── geolocation.css
+│   └── 📂 js/
+│       ├── bingo.js
+│       ├── homepage.js
+│       ├── form_validation.js
+│       ├── autocomplete.js
+│       └── geolocation.js
 └── README.md
 ```
 
@@ -207,6 +235,9 @@ Each week includes hands-on problem sets that reinforce the concepts:
 - 🤖 **Chatbot** - Natural language processing basics
 - 🗄️ **Movies Database** - SQL queries and database design
 - 🏠 **Fiftyville Mystery** - SQL detective work with complex queries
+- 🌐 **Homepage Portfolio** - Building a personal website with HTML, CSS, and JS
+- ✅ **Form Validation Demo** - Client-side validation using JavaScript and Regex
+- 📍 **Geolocation App** - Using browser APIs to get user location
 
 ## 💻 How to Use This Repository
 
@@ -232,12 +263,18 @@ Each week includes hands-on problem sets that reinforce the concepts:
    sqlite3 database.db < script.sql
    ```
 
-5. **Install Python dependencies** (for advanced programs):
+5. **Open HTML files**:
+   ```bash
+   # Simply open in your web browser (e.g., double-click the file).
+   # All CSS and JS are linked externally for best practice.
+   ```
+
+6. **Install Python dependencies** (for advanced programs):
    ```bash
    pip install cs50 pillow face-recognition sqlite3
    ```
 
-6. **Follow along with lectures** using the organized notes and code examples
+7. **Follow along with lectures** using the organized notes and code examples
 
 ## 🌟 David's Inspirational Quotes
 
@@ -256,6 +293,8 @@ Each week includes hands-on problem sets that reinforce the concepts:
 > *"Databases are just fancy filing cabinets - but the organization makes all the difference."*
 
 > *"SQL injection is like leaving your front door wide open - always sanitize your inputs!"*
+
+> *"The web is just computers talking to each other. HTML provides the nouns, CSS the adjectives, and JavaScript the verbs."*
 
 ## 🤝 Contributing
 
