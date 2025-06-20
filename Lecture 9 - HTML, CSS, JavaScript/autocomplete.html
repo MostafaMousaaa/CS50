@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Search with Autocomplete</title>
+    <link rel="stylesheet" href="css/autocomplete.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Smart Search</h1>
+            <p>Advanced autocomplete and search functionality</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput" 
+                    placeholder="Start typing to search..."
+                    autocomplete="off"
+                >
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+
+            <div class="search-filters">
+                <button class="filter-button active" data-category="all">All</button>
+                <button class="filter-button" data-category="people">People</button>
+                <button class="filter-button" data-category="places">Places</button>
+                <button class="filter-button" data-category="courses">Courses</button>
+                <button class="filter-button" data-category="concepts">Concepts</button>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            Ready to search...
+        </div>
+
+        <div class="results-section">
+            <div id="results"></div>        </div>
+    </div>
+
+    <script src="js/autocomplete.js"></script>
+</body>
+</html>
