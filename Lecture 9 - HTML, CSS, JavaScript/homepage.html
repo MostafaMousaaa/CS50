@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>My CS50 Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-graduation-cap me-2"></i>CS50 Student
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title animate-on-scroll">Welcome to My CS50 Journey</h1>
+            <p class="hero-subtitle animate-on-scroll">Exploring Computer Science, One Algorithm at a Time</p>
+            <a href="#about" class="btn btn-custom btn-lg animate-on-scroll">
+                <i class="fas fa-rocket me-2"></i>Explore My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="card animate-on-scroll">
+                        <div class="card-body p-4">
+                            <h3 class="card-title text-primary mb-3">My CS50 Story</h3>
+                            <p class="card-text">
+                                Welcome! I'm a passionate CS50 student diving deep into the world of computer science. 
+                                This course has transformed my understanding of problem-solving and computational thinking.
+                            </p>
+                            <p class="card-text">
+                                From learning the fundamentals in C to exploring web development with HTML, CSS, and JavaScript, 
+                                each week brings new challenges and exciting discoveries. I believe in understanding 
+                                "what's underneath the hood" - David Malan's core philosophy.
+                            </p>
+                            <p class="card-text">
+                                <strong>Current Focus:</strong> Web development, algorithms, and data structures
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="timeline animate-on-scroll">
+                        <div class="timeline-item">
+                            <h5>Week 0: Scratch</h5>
+                            <p>Started with visual programming and algorithmic thinking</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Week 1-2: C Programming</h5>
+                            <p>Learned low-level programming and memory management</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Week 3-5: Algorithms & Data Structures</h5>
+                            <p>Explored sorting, searching, and complex data structures</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Week 6-9: High-level Programming</h5>
+                            <p>Transitioned to Python, databases, and web development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">My CS50 Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <i class="fas fa-game-board me-2"></i>Tic-Tac-Toe AI
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Implemented minimax algorithm with alpha-beta pruning for unbeatable AI opponent.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">AI</span>
+                                <span class="badge bg-info">Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <i class="fas fa-dna me-2"></i>DNA Analysis
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                DNA sequence analysis tool using string processing and pattern matching algorithms.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-warning">Biology</span>
+                                <span class="badge bg-secondary">CSV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <i class="fas fa-database me-2"></i>Student Database
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Complete database system with SQL queries, joins, and security measures.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-danger">SQL</span>
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-dark">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <i class="fas fa-search me-2"></i>Speller
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                High-performance spell checker using hash tables and tries for fast word lookup.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-warning">C</span>
+                                <span class="badge bg-info">Data Structures</span>
+                                <span class="badge bg-success">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <i class="fas fa-image me-2"></i>Image Filter
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Image processing tool with various filters including blur, grayscale, and edge detection.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-warning">C</span>
+                                <span class="badge bg-primary">Computer Vision</span>
+                                <span class="badge bg-secondary">Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">
+                            <i class="fas fa-globe me-2"></i>This Homepage
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Responsive website built with HTML5, CSS3, Bootstrap, and JavaScript.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-danger">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-warning">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills Acquired in CS50</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">Programming Languages</div>
+                        <div class="card-body">
+                            <div class="skill-item">
+                                <div class="skill-name">C Programming</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Python</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">SQL</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card animate-on-scroll">
+                        <div class="card-header">Core Concepts</div>
+                        <div class="card-body">
+                            <div class="skill-item">
+                                <div class="skill-name">Algorithms & Data Structures</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Memory Management</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Web Development</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Database Design</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-info animate-on-scroll">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>student@cs50.harvard.edu</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    <span>github.com/cs50student</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>linkedin.com/in/cs50student</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Cambridge, MA</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>CS50 Student</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>Aspiring Software Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="mb-0">
+                                <em>"This is CS50!" - Let's connect and discuss computer science!</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CS50 Student Portfolio. Built with ❤️ using HTML, CSS, and JavaScript.</p>
+            <p>
+                <small>
+                    "Understanding what's underneath the hood" - David J. Malan
+                </small>
+            </p>
+        </div>    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/homepage.js"></script>
+</body>
+</html>
