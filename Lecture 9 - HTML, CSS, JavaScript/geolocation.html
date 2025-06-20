@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation Demo</title>
+    <link rel="stylesheet" href="css/geolocation.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 Geolocation Demo</h1>
+            <p>Exploring location-based web features</p>
+        </div>
+
+        <div class="content">
+            <div class="privacy-notice">
+                <h4>🔒 Privacy Notice</h4>
+                <p>This demo requests access to your location for demonstration purposes only. Your location data is processed locally and not stored or transmitted to any server.</p>
+            </div>
+
+            <div class="location-section">
+                <h3>📍 Get Your Location</h3>
+                <button class="button" id="getLocationBtn" onclick="getCurrentLocation()">
+                    Get Current Location
+                </button>
+                <button class="button" id="watchLocationBtn" onclick="watchLocation()">
+                    Watch Location Changes
+                </button>
+                <button class="button" id="stopWatchBtn" onclick="stopWatching()" disabled>
+                    Stop Watching
+                </button>
+                
+                <div id="locationStatus"></div>
+            </div>
+
+            <div id="locationResults" style="display: none;">
+                <div class="location-info">
+                    <div class="info-card">
+                        <h4>📱 Basic Information</h4>
+                        <p><strong>Latitude:</strong> <span id="latitude">-</span></p>
+                        <p><strong>Longitude:</strong> <span id="longitude">-</span></p>
+                        <p><strong>Accuracy:</strong> <span id="accuracy">-</span></p>
+                        <p><strong>Timestamp:</strong> <span id="timestamp">-</span></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>🎯 Detailed Data</h4>
+                        <p><strong>Altitude:</strong> <span id="altitude">-</span></p>
+                        <p><strong>Altitude Accuracy:</strong> <span id="altitudeAccuracy">-</span></p>
+                        <p><strong>Heading:</strong> <span id="heading">-</span></p>
+                        <p><strong>Speed:</strong> <span id="speed">-</span></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>🏠 Estimated Address</h4>
+                        <p id="estimatedAddress">Reverse geocoding not available in this demo</p>
+                        <p><small>In a real application, you would use a geocoding service</small></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>⚙️ Technical Details</h4>
+                        <p><strong>Coordinates:</strong></p>
+                        <div class="coordinates" id="coordinates">-</div>
+                        <p><strong>Accuracy Level:</strong> <span id="accuracyLevel">-</span></p>
+                    </div>
+                </div>
+
+                <div class="map-placeholder" id="mapPlaceholder">
+                    🗺️ Map would be displayed here<br>
+                    <small>In a real application, you would integrate with Google Maps, OpenStreetMap, etc.</small>
+                </div>
+
+                <div class="weather-widget" id="weatherWidget" style="display: none;">
+                    <h4>🌤️ Weather Information</h4>
+                    <p>In a real application, you would fetch weather data based on coordinates</p>
+                    <p>Temperature: <span id="temperature">--°C</span></p>
+                    <p>Conditions: <span id="conditions">--</span></p>
+                </div>
+
+                <div class="nearby-places">
+                    <h4>📍 Nearby Points of Interest</h4>
+                    <div id="nearbyPlaces">
+                        <p>In a real application, you would query a places API to find:</p>
+                        <div class="place-item">
+                            <strong>Harvard University</strong> <span class="distance">(~2.1 km)</span>
+                            <p>Educational Institution</p>
+                        </div>
+                        <div class="place-item">
+                            <strong>MIT</strong> <span class="distance">(~3.5 km)</span>
+                            <p>Educational Institution</p>
+                        </div>
+                        <div class="place-item">
+                            <strong>Local Coffee Shop</strong> <span class="distance">(~0.8 km)</span>
+                            <p>Food & Drink</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-section">
+                <h3>🔧 Geolocation Settings Demo</h3>
+                <label>
+                    <input type="checkbox" id="enableHighAccuracy" checked> Enable high accuracy
+                </label><br>
+                <label>
+                    Timeout: <input type="number" id="timeout" value="10000" min="1000" max="60000" step="1000"> ms
+                </label><br>
+                <label>
+                    Maximum age: <input type="number" id="maximumAge" value="60000" min="0" max="300000" step="1000"> ms
+                </label>
+            </div>
+
+            <div class="location-section">
+                <h3>📊 Location History</h3>
+                <button class="button" onclick="clearHistory()">Clear History</button>
+                <div id="locationHistory"></div>
+            </div>        </div>
+    </div>
+
+    <script src="js/geolocation.js"></script>
+</body>
+</html>
