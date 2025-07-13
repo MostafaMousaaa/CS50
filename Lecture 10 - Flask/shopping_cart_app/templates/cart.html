@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Cart{% endblock %}
+{% block content %}
+<h2>Your Shopping Cart</h2>
+<ul>
+    {% for item in cart %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+<a href="/add_to_cart/apple">Add Apple</a> |
+<a href="/add_to_cart/banana">Add Banana</a>
+{% endblock %} 
