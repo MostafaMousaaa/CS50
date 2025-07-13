@@ -92,6 +92,15 @@ As David always emphasizes, CS50 isn't just about learning to code—it's about 
 - **Web APIs** - Geolocation, local storage, and other browser capabilities
 - **Code Organization** - The importance of separating structure, style, and behavior into different files
 
+### Week 10: Flask - *Web Application Development*
+- **Web programming basics** - HTTP, client-server model, request/response cycle
+- **Flask microframework** - Routing, views, and application structure
+- **HTML forms** - Handling user input and validation
+- **Templates (Jinja2)** - Dynamic content and code reuse
+- **Sessions and cookies** - Maintaining state across requests
+- **SQLite integration** - Persistent data storage
+- **APIs and JSON** - Building and consuming web APIs
+
 ## 🛠️ Technologies & Tools
 
 ```
@@ -198,6 +207,19 @@ CS50/
 │       ├── form_validation.js
 │       ├── autocomplete.js
 │       └── geolocation.js
+├── 📂 Lecture 10 - Flask/
+│   ├── forms_app/
+│   │   ├── app.py
+│   │   └── templates/
+│   │       └── index.html
+│   ├── frosh_ims_app/
+│   │   ├── app.py
+│   │   └── templates/
+│   │       └── index.html
+│   └── shows_app/
+│       ├── app.py
+│       └── templates/
+│           └── index.html
 └── README.md
 ```
 
@@ -212,6 +234,19 @@ By the end of CS50, students will:
 - ✅ **Implement fundamental algorithms and data structures**
 - ✅ **Manage memory** and understand system-level programming
 - ✅ **Build web applications** from front-end to back-end
+
+
+- **forms_app/** — A simple app showing how to handle HTML forms, process user input, and display responses. Great for learning about routing, request methods, and templates.
+- **frosh_ims_app/** — A registration system for intramural sports, demonstrating form validation, user feedback, and storing submitted data. This mirrors the classic CS50 “Frosh IMs” example.
+- **shows_app/** — An app that queries a SQLite database and displays TV show data using templates. Illustrates database integration and dynamic content rendering.
+
+Each app is self-contained with its own `app.py` and `templates/` folder. To run an app, navigate to its directory and execute:
+
+```bash
+python app.py
+```
+
+You can then visit the app in your browser at `http://127.0.0.1:5000/`.
 
 ## 🏆 Problem Sets & Projects
 
