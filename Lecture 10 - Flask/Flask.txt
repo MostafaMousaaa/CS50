@@ -1,0 +1,94 @@
+CS50x Lecture 10: Flask — Theoretical Summary
+============================================
+
+TABLE OF CONTENTS
+-----------------
+1. Introduction to Web Programming
+2. What is Flask?
+3. Routing and Views
+4. HTML Forms and User Input
+5. Templates and Jinja2
+6. HTTP Request Methods
+7. Frosh IMs: A Case Study
+8. Databases with SQLite
+9. Cookies and Sessions
+10. State and Shopping Carts
+11. Displaying Data: Shows Example
+12. APIs and JSON
+
+---
+
+1. Introduction to Web Programming
+----------------------------------
+- The web is built on the client-server model: browsers (clients) send requests to servers, which respond with content.
+- HTTP is the protocol used for communication; each request gets a response.
+- Web applications allow dynamic, interactive content, not just static pages.
+
+2. What is Flask?
+-----------------
+- Flask is a lightweight, micro web framework for Python.
+- It allows you to build web applications quickly, focusing on simplicity and flexibility.
+- Flask apps are just Python scripts that define routes (URLs) and their corresponding logic.
+
+3. Routing and Views
+--------------------
+- A route maps a URL to a Python function (called a "view").
+- The view returns the content to be sent to the browser (HTML, text, JSON, etc.).
+- The `@app.route()` decorator is used to define routes.
+
+4. HTML Forms and User Input
+----------------------------
+- Forms allow users to submit data to the server (e.g., login, search, registration).
+- Flask can process form data sent via GET or POST requests.
+- User input is accessed via `request.form` (for POST) or `request.args` (for GET).
+
+5. Templates and Jinja2
+-----------------------
+- Flask uses the Jinja2 templating engine to separate Python logic from HTML.
+- Templates can include placeholders (e.g., `{{ variable }}`) and control structures (e.g., `{% for ... %}`).
+- This enables dynamic content and code reuse (e.g., base layouts).
+
+6. HTTP Request Methods
+-----------------------
+- Common methods: GET (retrieve data), POST (submit data), others include PUT, DELETE.
+- Flask routes can specify which methods they accept.
+- POST is typically used for form submissions to avoid exposing data in the URL.
+
+7. Frosh IMs: A Case Study
+--------------------------
+- A sample app for registering students for intramural sports.
+- Demonstrates form handling, validation (e.g., required fields), and user feedback.
+- Shows how to store and display submitted data.
+
+8. Databases with SQLite
+------------------------
+- Web apps often need to store data persistently (e.g., users, posts).
+- SQLite is a lightweight, file-based database included with Python.
+- Flask can interact with SQLite using the `sqlite3` module or an ORM like SQLAlchemy.
+
+9. Cookies and Sessions
+-----------------------
+- Cookies are small pieces of data stored in the browser, sent with each request.
+- Sessions allow the server to remember information about a user across requests (e.g., login state, cart contents).
+- Flask provides a `session` object for easy session management (requires a secret key).
+
+10. State and Shopping Carts
+----------------------------
+- HTTP is stateless; each request is independent.
+- Sessions are used to maintain state, such as a shopping cart, across multiple requests.
+- Data can be stored in the session dictionary and persists for the user's session.
+
+11. Displaying Data: Shows Example
+----------------------------------
+- Demonstrates querying a database and displaying results in a template.
+- Shows how to pass data from Python to HTML for dynamic content.
+
+12. APIs and JSON
+-----------------
+- APIs allow applications to communicate by exchanging data, often in JSON format.
+- Flask can return JSON responses using `jsonify()`.
+- APIs are used for building web services, mobile apps, and more.
+
+---
+
+This summary covers the key theoretical concepts from the CS50x Flask lecture, focusing on how web applications work, how Flask enables rapid development, and the foundational ideas behind forms, templates, sessions, databases, and APIs. 
