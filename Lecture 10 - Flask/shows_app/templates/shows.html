@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}TV Shows{% endblock %}
+{% block content %}
+<h1>TV Shows</h1>
+<ul>
+    {% for show in shows %}
+        <li>{{ show[1] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %} 

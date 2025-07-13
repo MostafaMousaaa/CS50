@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Shows App{% endblock %}</title>
+    <style>body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f7f7fa; }</style>
+</head>
+<body>
+    <header>
+        <h1>TV Shows Database</h1>
+        <hr>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <hr>
+        <p>Shows App &copy; CS50</p>
+    </footer>
+</body>
+</html> 
